@@ -7,7 +7,7 @@
 
 > Automated **PredictIt trading bot** — Academic / US politics. Part of the [Prediction Market Toolkits](https://github.com/HarrierOnChain/Prediction-Markets-Trading-Bot-Toolkits) suite: one execution core, one risk layer, every venue.
 
-**PredictIt** is on the **adapter-driven roadmap** — the engine is built; the PredictIt adapter is in the queue. Trade it and want it prioritized? [Reach out](https://t.me/HarrierOnChain) and it moves up.
+**PredictIt** is **live in production today.**
 
 > Research-only, bet caps enforced.
 
@@ -22,6 +22,20 @@ These bots run on PredictIt through a single venue adapter on the shared engine 
 | 🎯 **Resolution Sniper** — 95¢ near-certainty → guaranteed $1.00 payout |
 
 > Want a strategy not listed here on PredictIt? Adapter coverage is demand-driven — [ask](https://t.me/HarrierOnChain).
+
+---
+
+## Quickstart
+
+Clone, drop in your keys, and run — the TUI lets you pick a strategy.
+
+```bash
+git clone https://github.com/HarrierOnChain/PredictIt.git
+cd PredictIt
+cp config.example.yaml config.yaml   # add your keys
+cargo run --release                  # launch the TUI
+# headless: cargo run --release -- run copy-trading
+```
 
 ---
 
